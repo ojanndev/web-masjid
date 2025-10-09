@@ -37,7 +37,7 @@ const PendaftaranSiswaBaru = () => {
   useScrollAnimation();
 
   useEffect(() => {
-    document.title = "Pendaftaran Siswa Baru - SMK Fahd Islamic School";
+    document.title = "Pendaftaran Anggota - Yayasan Masjid Ibnusina Jatibening";
   }, []);
 
   const handleInputChange = (field, value) => {
@@ -324,7 +324,7 @@ const PendaftaranSiswaBaru = () => {
                   </div>
 
                   <div className="mt-4">
-                    <Label htmlFor="alasanMemilih" className="text-sm font-medium text-gray-700">Alasan Memilih SMK Fahd Islamic School *</Label>
+                    <Label htmlFor="alasanMemilih" className="text-sm font-medium text-gray-700">Alasan Bergabung dengan Yayasan Masjid Ibnusina Jatibening *</Label>
                     <Textarea 
                       id="alasanMemilih"
                       value={formData.alasanMemilih}

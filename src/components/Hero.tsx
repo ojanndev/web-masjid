@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 
-
 const Hero = () => {
-  const images = ["bg-fahd.jpg", "bg-fahd-1.jpg", "bg-fahd-2.jpg"];
+  const images = ["bg-masjid.jpeg", "bg-masjid.jpeg", "bg-masjid.jpeg"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Auto slide tiap 5 detik
@@ -28,31 +27,50 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/60 to-black/40" />
+      {/* Overlay hijau transparan */}
+      <div className="absolute inset-0 z-10 bg-emerald-900/60" />
 
       {/* Konten */}
       <div className="container mx-auto px-4 py-20 relative z-30">
-        <div className="flex flex-col items-center text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-xs font-medium text-white tracking-wide">
-              Akreditasi A
-            </span>
-          </div>
+        <div className="flex flex-col items-start text-left max-w-3xl">
+          {/* Salam */}
+          <p className="text-gray-200 text-sm md:text-base mb-4">
+            Assalamualaikum warahmatullahi wabarakatuh
+          </p>
 
           {/* Headline */}
-          <h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
-            Selamat Datang di <br />
-            <span className="text-[#D4A373]">SMK Fahd Islamic School</span>
+          <h1
+            className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-snug text-white"
+            style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.4)" }}
+          >
+            Yayasan Masjid IBNUSINA Jatibening,<br /> Bekasi
           </h1>
 
+
           {/* Deskripsi */}
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed drop-shadow-md">
-            SMK Fahd Islamic School menyediakan pendidikan vokasional terbaik
-            dengan fasilitas lengkap, guru kompeten, dan kurikulum berbasis
-            industri Islami untuk mencetak generasi unggul.
+          <p className="text-gray-200 text-sm md:text-lg max-w-2xl leading-relaxed drop-shadow-md">
+            Yayasan Masjid Ibnusina Jatibening berdiri sebagai pusat ibadah,
+            dakwah, dan kegiatan sosial kemasyarakatan. Masjid ini diresmikan
+            pada tahun 2023 dengan tujuan membina ukhuwah Islamiyah, memberikan
+            pendidikan agama, serta menjadi wadah berbagai kegiatan sosial
+            masyarakat sekitar.
           </p>
+
+          {/* Tombol */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <a
+              href="#tentang"
+              className="flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
+            >
+              Tentang Yayasan
+            </a>
+            <a
+              href="#program"
+              className="flex items-center justify-center px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition"
+            >
+              Program Kami
+            </a>
+          </div>
         </div>
       </div>
     </section>

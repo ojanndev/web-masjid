@@ -11,7 +11,7 @@ import { faqItems } from '../data/faqData';
 
 const FAQ = () => {
   return (
-    <section id="faq" className="py-24 bg-gradient-to-b from-[#12141C] to-crypto-blue">
+    <section id="faq" className="py-24 bg-gradient-to-b from-teal-900 to-emerald-700">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient">
@@ -31,7 +31,7 @@ const FAQ = () => {
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden animate-on-scroll"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <AccordionTrigger className="px-6 py-4 text-white hover:text-crypto-purple hover:no-underline">
+                <AccordionTrigger className="px-6 py-4 text-white hover:text-emerald-400 hover:no-underline">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-400">

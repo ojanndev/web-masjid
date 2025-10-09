@@ -24,7 +24,7 @@ const Kontak = () => {
 
   // Set page title
   useEffect(() => {
-    document.title = "Kontak - SMK Fahd Islamic School";
+    document.title = "Kontak - Yayasan Masjid Ibnusina Jatibening";
   }, []);
 
   const kontakInfo = [
@@ -37,50 +37,50 @@ const Kontak = () => {
     {
       icon: Mail,
       title: "Email Resmi",
-      info: "info@smkfahdislamic.sch.id",
+      info: "info@ibnusinajatibening.or.id",
       description: "Kirim email untuk pertanyaan detail"
     },
     {
       icon: MapPin,
-      title: "Alamat Sekolah",
-      info: "Jl. Pendidikan No. 123, Jakarta Selatan",
-      description: "Lokasi kampus SMK Fahd Islamic School"
+      title: "Alamat Yayasan",
+      info: "Jl. H. Ali No. 45, Jatibening, Bekasi",
+      description: "Lokasi Yayasan Masjid Ibnusina Jatibening"
     },
     {
       icon: Clock,
       title: "Jam Operasional",
-      info: "Senin - Jumat: 07:00 - 16:00",
-      description: "Sabtu: 07:00 - 12:00"
+      info: "Senin - Jum'at: 08:00 - 17:00",
+      description: "Minggu: 07:00 - 11:00 (Kegiatan Masjid)"
     }
   ];
 
   const adminKontak = [
     {
-      nama: "Ahmad Fadhil, S.Pd",
-      jabatan: "Kepala Sekolah",
+      nama: "KH. Dr. Ibnusina Al-Jatibening",
+      jabatan: "Pendiri & Pembina Yayasan",
       telepon: "0812-3456-7890",
-      email: "kepsek@smkfahdislamic.sch.id",
+      email: "pembina@ibnusinajatibening.or.id",
       foto: "https://picsum.photos/200/200?random=1"
     },
     {
-      nama: "Siti Nurhaliza, S.Pd",
-      jabatan: "Wakil Kepala Sekolah",
+      nama: "Ahmad Fadhil, S.Ag",
+      jabatan: "Ketua Yayasan",
       telepon: "0821-9876-5432",
-      email: "wakasek@smkfahdislamic.sch.id",
+      email: "ketua@ibnusinajatibening.or.id",
       foto: "https://picsum.photos/200/200?random=2"
     },
     {
-      nama: "Muhammad Rizki, S.Kom",
-      jabatan: "Admin TU & IT Support",
+      nama: "Siti Nurhaliza, S.Pd.I",
+      jabatan: "Sekretaris Yayasan",
       telepon: "0856-1234-5678",
-      email: "admin@smkfahdislamic.sch.id",
+      email: "sekretaris@ibnusinajatibening.or.id",
       foto: "https://picsum.photos/200/200?random=3"
     },
     {
-      nama: "Fatimah Zahra, S.E",
-      jabatan: "Staff Administrasi",
+      nama: "Muhammad Rizki, S.E",
+      jabatan: "Bendahara Yayasan",
       telepon: "0813-5555-7777",
-      email: "administrasi@smkfahdislamic.sch.id",
+      email: "bendahara@ibnusinajatibening.or.id",
       foto: "https://picsum.photos/200/200?random=4"
     }
   ];
@@ -89,19 +89,19 @@ const Kontak = () => {
     {
       name: "Facebook",
       icon: Facebook,
-      link: "https://facebook.com/smkfahdislamic",
+      link: "https://facebook.com/ibnusinajatibening",
       color: "text-blue-600 hover:text-blue-700"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      link: "https://instagram.com/smkfahdislamic",
+      link: "https://instagram.com/ibnusinajatibening",
       color: "text-pink-600 hover:text-pink-700"
     },
     {
       name: "Website",
       icon: Globe,
-      link: "https://smkfahdislamic.sch.id",
+      link: "https://ibnusinajatibening.or.id",
       color: "text-amber-600 hover:text-amber-700"
     }
   ];
@@ -116,7 +116,7 @@ const Kontak = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
           style={{
-            backgroundImage: 'url("bg-fahd-2.jpg")', // GANTI DENGAN GAMBAR ASLI SEKOLAHMU
+            backgroundImage: 'url("bg-masjid.jpeg")', // GANTI DENGAN GAMBAR ASLI MASJIDMU
           }}
         >
           {/* Overlay gelap agar teks mudah dibaca */}
@@ -140,7 +140,7 @@ const Kontak = () => {
           {/* Deskripsi */}
             <div className="h-1 w-24 bg-white mx-auto mb-6 rounded-full" />
             <p className="text-lg text-white/90  max-w-2xl mx-auto leading-relaxed">
-              Informasi kontak dan lokasi SMK Fahd Islamic School
+              Informasi kontak dan lokasi Yayasan Masjid Ibnusina Jatibening
             </p>
           </motion.div>
         </div>
@@ -259,10 +259,10 @@ const Kontak = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-amber-800 mb-4">
-                Lokasi Sekolah
+                Lokasi Yayasan
               </h2>
               <p className="text-amber-700/80 max-w-2xl mx-auto">
-                Temukan lokasi SMK Fahd Islamic School dengan mudah
+                Temukan lokasi Yayasan Masjid Ibnusina Jatibening dengan mudah
               </p>
             </motion.div>
 
@@ -285,29 +285,29 @@ const Kontak = () => {
                     <div>
                       <h4 className="font-semibold text-amber-800 mb-2">Alamat:</h4>
                       <p className="text-amber-700">
-                        Jl. Pendidikan No. 123<br />
-                        Kelurahan Ragunan<br />
-                        Kecamatan Pasar Minggu<br />
-                        Jakarta Selatan 12550
+                        Jl. Masjid Ibnusina No. 24<br />
+                        Kelurahan Jatibening<br />
+                        Kecamatan Bekasi Selatan<br />
+                        Kota Bekasi 17145
                       </p>
                     </div>
 
                     <div>
                       <h4 className="font-semibold text-amber-800 mb-2">Transportasi:</h4>
                       <ul className="text-amber-700 space-y-1 text-sm">
-                        <li>• TransJakarta: Koridor 6 (Ragunan)</li>
-                        <li>• Bus Kota: Jurusan Blok M - Ragunan</li>
-                        <li>• Angkot: M20, B21</li>
-                        <li>• KRL: Stasiun Pasar Minggu (3 km)</li>
+                        <li>• Angkot: Jatibening - Bekasi</li>
+                        <li>• Bus: Mayasari Bakti AC 01A</li>
+                        <li>• KRL: Stasiun Jatibening (1 km)</li>
+                        <li>• Online: Ojek, Taksi Online</li>
                       </ul>
                     </div>
 
                     <div>
                       <h4 className="font-semibold text-amber-800 mb-2">Landmark:</h4>
                       <ul className="text-amber-700 space-y-1 text-sm">
-                        <li>• Kebun Binatang Ragunan (500m)</li>
-                        <li>• Pasar Minggu Plaza (2 km)</li>
-                        <li>• RS Fatmawati (3 km)</li>
+                        <li>• Terminal Jatibening (300m)</li>
+                        <li>• Jatibening Indah (500m)</li>
+                        <li>• Gerbang Tol Jatibening (2 km)</li>
                       </ul>
                     </div>
                   </div>
@@ -330,7 +330,7 @@ const Kontak = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Lokasi SMK Fahd Islamic School"
+                      title="Lokasi Yayasan Masjid Ibnusina Jatibening"
                       className="rounded-lg"
                     />
                   </div>

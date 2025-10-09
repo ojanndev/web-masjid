@@ -4,11 +4,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import ProfileSchool from "./pages/ProfileSchool";
-import GallerySekolah from "./pages/GallerySekolah";
+import ProfileSchool from "./pages/ProfileYayasan";
+import GallerySekolah from "./pages/GalleryMasjid";
 import Kontak from "./pages/Kontak";
 import PendaftaranSiswaBaru from "./pages/PendaftaranSiswaBaru";
 import NotFound from "./pages/NotFound";
+import GalleryMasjid from "./pages/GalleryMasjid";
 
 const queryClient = new QueryClient();
 
@@ -20,8 +21,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/profile-sekolah" element={<ProfileSchool />} />
-          <Route path="/gallery-sekolah" element={<GallerySekolah />} />
+          <Route path="/profile-yayasan" element={<ProfileSchool />} />
+          <Route path="/gallery-masjid" element={<GalleryMasjid />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/pendaftaran-siswa-baru" element={<PendaftaranSiswaBaru />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

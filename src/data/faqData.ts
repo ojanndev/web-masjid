@@ -1,26 +1,26 @@
 export const faqItems = [
   {
-    question: "How secure is CryptoFlow?",
-    answer: "CryptoFlow employs bank-level security measures including 256-bit encryption, cold storage for 95% of assets, two-factor authentication, and regular security audits. Our platform has never been compromised and we maintain a comprehensive insurance policy to protect user funds."
+    question: "Apa saja program yang ditawarkan oleh Yayasan Masjid Ibnusina?",
+    answer: "Yayasan Masjid Ibnusina Jatibening menawarkan berbagai program pendidikan dan keagamaan, termasuk Taman Pendidikan Al-Qur'an (TPQ), pengajian rutin, pelatihan keterampilan, serta program sosial kemasyarakatan untuk mendukung pembentukan generasi yang berakhlak dan kompeten."
   },
   {
-    question: "What cryptocurrencies can I trade on CryptoFlow?",
-    answer: "CryptoFlow supports trading of over 50 cryptocurrencies, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), Cardano (ADA), Ripple (XRP), and many more. We regularly add new cryptocurrencies based on market trends and user demand."
+    question: "Bagaimana cara mendaftar sebagai anggota jamaah atau murid di yayasan?",
+    answer: "Anda dapat mendaftar sebagai anggota jamaah atau murid dengan mengunjungi kantor Yayasan Masjid Ibnusina Jatibening di Jatibening, Bekasi, atau menghubungi kami melalui kontak yang tersedia. Kami juga menyediakan formulir pendaftaran online untuk program-program tertentu."
   },
   {
-    question: "What are the fees for using CryptoFlow?",
-    answer: "Our fee structure is transparent and competitive. Basic accounts pay 0.25% per trade, Pro accounts pay 0.1%, and Enterprise accounts pay no trading fees. There are no hidden fees, and we don't charge for deposits. Withdrawal fees vary by cryptocurrency to cover network costs."
+    question: "Berapa biaya untuk mengikuti program-program di Yayasan Masjid Ibnusina?",
+    answer: "Sebagian besar program keagamaan seperti pengajian dan TPQ bersifat gratis. Untuk program pelatihan keterampilan dan pendidikan formal, kami menyesuaikan dengan kemampuan peserta. Kami juga menyediakan beasiswa bagi yang membutuhkan."
   },
   {
-    question: "How do I deposit funds into my CryptoFlow account?",
-    answer: "You can deposit funds via bank transfer, credit/debit card, or by transferring cryptocurrency from another wallet. Bank transfers typically process within 1-3 business days, while card payments and crypto transfers are nearly instant."
+    question: "Apakah Yayasan Masjid Ibnusina menyediakan beasiswa atau bantuan pendidikan?",
+    answer: "Ya, Yayasan Masjid Ibnusina Jatibening menyediakan berbagai bentuk bantuan pendidikan dan beasiswa untuk anak-anak kurang mampu dan warga sekitar yang membutuhkan, sebagai bentuk kepedulian sosial dan pemberdayaan masyarakat."
   },
   {
-    question: "Is CryptoFlow available in my country?",
-    answer: "CryptoFlow is available in over 140 countries worldwide. However, due to regulatory constraints, we cannot serve users from certain jurisdictions. Please check our Terms of Service or contact our support team to verify availability in your specific location."
+    question: "Kapan jadwal pelaksanaan sholat berjamaah dan kegiatan keagamaan di masjid?",
+    answer: "Sholat berjamaah 5 waktu dilaksanakan setiap hari sesuai waktu yang ditentukan. Selain itu, kami juga menyelenggarakan pengajian rutin setiap hari Jumat dan Ahad, serta majelis taklim untuk ibu-ibu setiap hari Selasa dan Kamis."
   },
   {
-    question: "How do I get started with CryptoFlow?",
-    answer: "Getting started is simple. Create an account, complete the verification process (which typically takes less than 10 minutes), deposit funds using your preferred method, and you're ready to start trading. Our intuitive interface is designed to make cryptocurrency trading accessible for beginners while offering powerful tools for experienced traders."
+    question: "Bagaimana cara berpartisipasi dalam kegiatan sosial dan bakti masyarakat?",
+    answer: "Anda dapat berpartisipasi dalam kegiatan sosial dengan mendaftar sebagai relawan atau donatur. Kami secara rutin mengadakan bakti sosial seperti pembagian sembako, khitanan massal, dan kegiatan amal lainnya. Informasi lebih lanjut dapat Anda peroleh dari petugas kami."
   }
 ];

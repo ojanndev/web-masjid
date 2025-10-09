@@ -1,26 +1,26 @@
 export const testimonials = [
     {
-      quote: "CryptoFlow has completely transformed my crypto trading experience. The real-time analytics and AI recommendations have significantly improved my returns.",
-      author: "Michael Chen",
-      role: "Full-time Trader",
+      quote: "Yayasan Masjid Ibnusina Jatibening benar-benar mengubah pengalaman spiritual dan pendidikan saya. Program-program mereka sangat membantu dalam meningkatkan pemahaman agama dan keterampilan hidup.",
+      author: "Ahmad Fauzi",
+      role: "Wali Murid",
       avatar: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop"
     },
     {
-      quote: "As a beginner, I was intimidated by crypto trading until I found CryptoFlow. Their intuitive interface and educational resources made it easy to start investing confidently.",
-      author: "Sarah Johnson",
-      role: "Tech Entrepreneur",
+      quote: "Sebagai pemula dalam memahami agama, saya merasa terbantu dengan program-program Yayasan Ibnusina. Interface pendidikan mereka intuitif dan sumber daya pendidikannya sangat mempermudah saya belajar secara percaya diri.",
+      author: "Siti Nurhaliza",
+      role: "Jamaah",
       avatar: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop"
     },
     {
-      quote: "The security features on CryptoFlow are unmatched. I feel confident keeping my assets on their platform, and the trading fees are the most competitive I've found.",
-      author: "David Rodriguez",
-      role: "Cybersecurity Specialist",
+      quote: "Fasilitas dan keamanan di Yayasan Masjid Ibnusina sangat luar biasa. Saya merasa tenang mempercayakan pendidikan anak saya di sini, dan biaya serta program yang ditawarkan sangat terjangkau.",
+      author: "Budi Santoso",
+      role: "Pekerja Sosial",
       avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=100&h=100&fit=crop"
     },
     {
-      quote: "Their customer support is phenomenal. Any time I've had a question or issue, the team has resolved it quickly. The platform itself is lightning fast and reliable.",
-      author: "Emma Thompson",
-      role: "Investment Advisor",
+      quote: "Tim pengelola sangat ramah dan peduli. Setiap kali saya memiliki pertanyaan atau masalah, tim selalu menanganinya dengan cepat. Fasilitas dan program yang disediakan sangat baik dan dapat diandalkan.",
+      author: "Dewi Anggraini",
+      role: "Relawan Sosial",
       avatar: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop"
     }
   ];

@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import PhotoGallery from '@/components/About';
 import Features from '@/components/Features';
-import Testimonials from '@/components/Testimonials';
+import DonasiSection from '@/components/DonasiSection';
 // import Pricing from '@/components/Pricing';
 // import FAQ from '@/components/FAQ';
 // import CTA from '@/components/CTA';
@@ -18,7 +18,7 @@ const Index = () => {
 
   // Set page title
   useEffect(() => {
-    document.title = "SMK Fahd Islamic School";
+    document.title = "yayasan Masjid IBNUSINA Jatibening";
   }, []);
   
   return (
@@ -27,7 +27,7 @@ const Index = () => {
       <Hero />
       <PhotoGallery />
       <Features />
-      <Testimonials />
+      <DonasiSection />
       {/* <Pricing /> */}
       {/* <FAQ /> */}
       {/* <CTA /> */}

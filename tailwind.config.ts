@@ -66,13 +66,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom crypto colors → Diubah jadi nuansa krem-coklat
-				crypto: {
-					blue: '#D4C9B8',     // Krem coklat cerah (ganti dari biru gelap)
-					purple: '#A89A85',   // Coklat abu-abu lembut
-					'light-purple': '#E8DED1', // Krem sangat terang
-					'dark-purple': '#7D6E5F',  // Coklat tua hangat
-					accent: '#C97A4F',   // Oranye krem cerah (untuk tombol/aksi)
+				// Custom Islamic/mosque colors 
+				mosque: {
+					green: '#2D5016',      // Deep Islamic green
+					emerald: '#047857',    // Emerald green
+					'light-green': '#D1FAE5', // Light green
+					'gold': '#D97706',     // Gold/yellow accent
+					'light-gold': '#FEF3C7', // Light gold
+					'accent': '#0EA5E9',   // Blue accent (for buttons/actions)
 				}
 			},
 			fontFamily: {

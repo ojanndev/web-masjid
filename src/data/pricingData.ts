@@ -2,49 +2,49 @@
 
 export const pricingPlans = [
   {
-    name: "Basic",
-    price: { monthly: "$0", annual: "$0" },
-    description: "Perfect for beginners getting started with crypto trading.",
+    name: "Warga",
+    price: { monthly: "Gratis", annual: "Gratis" },
+    description: "Untuk warga sekitar yang ingin mengikuti kegiatan dasar di masjid.",
     features: [
-      "Access to 20+ cryptocurrencies",
-      "Basic charting tools",
-      "Market data with 15-min delay",
-      "Email support",
-      "Mobile app access"
+      "Akses kegiatan sholat berjamaah",
+      "Akses pengajian dasar",
+      "Akses perpustakaan digital",
+      "Dukungan komunitas",
+      "Akses kegiatan sosial"
     ],
-    buttonText: "Get Started"
+    buttonText: "Daftar Sekarang"
   },
   {
-    name: "Pro",
-    price: { monthly: "$19", annual: "$15" },
-    description: "Designed for active traders seeking advanced tools.",
+    name: "Murid",
+    price: { monthly: "Rp 50rb", annual: "Rp 500rb" },
+    description: "Program pendidikan untuk anak-anak dan remaja.",
     features: [
-      "Access to 50+ cryptocurrencies",
-      "Advanced charting tools",
-      "Real-time market data",
-      "Priority email support",
-      "Reduced trading fees (0.1%)",
-      "API access",
-      "Portfolio analytics"
+      "TPQ dan TPA",
+      "Pengajaran Al-Qur'an dan Hadits",
+      "Kegiatan ekstrakurikuler",
+      "Dukungan pendidikan utama",
+      "Biaya terjangkau",
+      "Kegiatan outing edukasi",
+      "Pembinaan akhlak"
     ],
     highlighted: true,
-    buttonText: "Start 7-Day Free Trial"
+    buttonText: "Mulai Program"
   },
   {
-    name: "Enterprise",
-    price: { monthly: "$49", annual: "$39" },
-    description: "Comprehensive solution for professional traders.",
+    name: "Donatur",
+    price: { monthly: "Sesuai", annual: "Sesuai" },
+    description: "Untuk individu dan organisasi yang ingin berkontribusi.",
     features: [
-      "Access to all cryptocurrencies",
-      "Professional-grade charts",
-      "Real-time market data",
-      "24/7 dedicated support",
-      "Zero trading fees",
-      "Advanced API access",
-      "Institutional-grade security",
-      "Custom reporting",
-      "Team management"
+      "Akses semua program",
+      "Partisipasi dalam pengambilan keputusan",
+      "Laporan penggunaan dana",
+      "Dukungan langsung 24/7",
+      "Pengurangan pajak",
+      "Akses API donasi",
+      "Keamanan tingkat institusi",
+      "Laporan kustom",
+      "Manajemen tim"
     ],
-    buttonText: "Contact Sales"
+    buttonText: "Hubungi Kami"
   }
 ];

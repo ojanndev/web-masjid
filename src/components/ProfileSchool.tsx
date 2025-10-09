@@ -90,20 +90,20 @@ const ProfileSchool = () => {
   ];
 
   const founderInfo = {
-    name: "KH. Dr. Fahd bin Abdullah Al-Makki",
-    title: "Pendiri SMK Fahd Islamic School",
+    name: "KH. Dr. Ibnusina Al-Jatibening",
+    title: "Pendiri Yayasan Masjid Ibnusina Jatibening",
     birthYear: "1955",
     education: [
       "Doktor Pendidikan Islam - Universitas Al-Azhar, Mesir",
       "Magister Syariah - Universitas Islam Madinah, Saudi Arabia",
       "Sarjana Dakwah - Institut Agama Islam Negeri Jakarta"
     ],
-    biography: "Beliau adalah seorang ulama dan pendidik yang berdedikasi tinggi dalam pengembangan pendidikan Islam di Indonesia. Dengan pengalaman lebih dari 30 tahun di bidang pendidikan, KH. Dr. Fahd mendirikan SMK Fahd Islamic School pada tahun 2009 dengan visi menciptakan generasi muslim yang tidak hanya unggul dalam IPTEK tetapi juga berakhlak mulia.",
+    biography: "Beliau adalah seorang ulama dan tokoh masyarakat yang berdedikasi tinggi dalam pengembangan pendidikan, kegiatan keagamaan, dan pemberdayaan masyarakat di Jatibening. Dengan pengalaman lebih dari 30 tahun dalam dakwah dan pemberdayaan umat, KH. Dr. Ibnusina mendirikan Yayasan Masjid Ibnusina Jatibening pada tahun 2009 dengan visi menciptakan generasi muslim yang tidak hanya unggul dalam IPTEK tetapi juga berakhlak mulia.",
     achievements: [
-      "Pendiri 5 lembaga pendidikan Islam di Indonesia",
-      "Penulis 15 buku tentang pendidikan Islam",
-      "Penerima penghargaan Tokoh Pendidikan Islam Nasional 2020",
-      "Pembina Yayasan Pendidikan Islam Fahd"
+      "Pendiri 3 lembaga pendidikan dan keagamaan di Jatibening",
+      "Penulis 10 buku tentang pendidikan dan pemberdayaan masyarakat",
+      "Penerima penghargaan Tokoh Pendidikan dan Dakwah Nasional 2020",
+      "Pembina Yayasan Masjid Ibnusina Jatibening"
     ],
     philosophy: "Pendidikan adalah investasi terbaik untuk masa depan umat. Melalui integrasi ilmu dunia dan akhirat, kita dapat melahirkan generasi yang mampu memimpin peradaban Islam di era modern.",
     photo: "https://picsum.photos/400/400?random=7"
@@ -151,7 +151,7 @@ const ProfileSchool = () => {
                     </div>
                     <div className="flex items-center">
                       <Mail className="h-4 w-4 mr-2" />
-                      <span><strong>Email:</strong> info@smkfahd.sch.id</span>
+                      <span><strong>Email:</strong> info@ibnusinajatibening.or.id</span>
                     </div>
                   </div>
                 </div>
@@ -175,16 +175,17 @@ const ProfileSchool = () => {
 
               <div className="space-y-6">
                 <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-amber-200/50">
-                  <h3 className="text-xl font-bold text-slate-800 mb-4">Tentang SMK Fahd Islamic School</h3>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Tentang Yayasan Masjid Ibnusina Jatibening</h3>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    SMK Fahd Islamic School adalah sekolah menengah kejuruan yang mengintegrasikan pendidikan 
-                    vokasional dengan nilai-nilai Islam. Didirikan pada tahun 2009, sekolah ini telah berkembang 
-                    menjadi salah satu institusi pendidikan terpercaya di Indonesia.
+                    Yayasan Masjid Ibnusina Jatibening adalah sebuah yayasan yang berfokus pada pengembangan 
+                    pendidikan, kegiatan keagamaan, dan pemberdayaan masyarakat di Jatibening. Didirikan 
+                    pada tahun 2009, yayasan ini telah berkembang menjadi salah satu institusi yang 
+                    terpercaya di masyarakat Jatibening.
                   </p>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    Dengan menggabungkan kurikulum nasional dan kurikulum berbasis kompetensi industri, 
-                    kami berkomitmen menghasilkan lulusan yang tidak hanya kompeten secara teknis, 
-                    tetapi juga berakhlak mulia dan siap menghadapi tantangan dunia kerja.
+                    Dengan menggabungkan nilai-nilai Islam dan kegiatan pemberdayaan masyarakat, 
+                    kami berkomitmen menghasilkan lulusan dan masyarakat yang tidak hanya kompeten secara 
+                    teknis, tetapi juga berakhlak mulia dan siap menghadapi tantangan dunia kerja.
                   </p>
                   <div className="grid grid-cols-3 gap-4 mt-6">
                     <div className="text-center">
@@ -502,7 +503,7 @@ const ProfileSchool = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-amber-800 to-orange-700 bg-clip-text text-transparent">
-            Profile SMK Fahd Islamic School
+            Profile Yayasan Masjid Ibnusina Jatibening
           </h2>
           <div className="h-1 w-32 bg-gradient-to-r from-amber-600 to-orange-600 mx-auto mb-6 rounded-full" />
           <p className="text-xl text-slate-700 max-w-3xl mx-auto">

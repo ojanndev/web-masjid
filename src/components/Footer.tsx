@@ -12,56 +12,57 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/logo-fahd.png"
-                alt="SMK Fahd Islamic School Logo"
+                src="/logo.png"
+                alt="Yayasan Masjid Ibnusina Jatibening Logo"
                 className="h-12 w-auto mr-3"
               />
               <h2 className="text-2xl font-bold text-white">
-                SMK Fahd Islamic School
+                Yayasan Masjid Ibnusina Jatibening
               </h2>
             </div>
             <p className="text-gray-400 mb-6">
-              Sekolah kejuruan berbasis Islami yang berkomitmen mencetak generasi unggul,
-              berakhlak mulia, dan siap menghadapi tantangan masa depan.
+              Lembaga dakwah yang mengelola Masjid Ibnusina sebagai pusat ibadah, 
+              pendidikan Al-Qur’an, pemberdayaan umat, dan kegiatan sosial berbasis Islam.
             </p>
             {/* Sosial Media */}
             <div className="flex space-x-4">
-              <a href="#!" className="hover:text-white transition-colors">
+              <a href="https://facebook.com/ibnusinajatibening" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#!" className="hover:text-white transition-colors">
+              <a href="https://instagram.com/ibnusinajatibening" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#!" className="hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#!" className="hover:text-white transition-colors">
+              <a href="https://youtube.com/@ibnusinajatibening" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="YouTube">
                 <Youtube className="h-5 w-5" />
+              </a>
+              {/* LinkedIn tetap ada, tapi opsional — bisa dihapus jika tidak dipakai */}
+              <a href="#!" className="hover:text-white transition-colors" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
 
-          {/* Program Keahlian */}
+          {/* Profil & Program */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Program Keahlian</h3>
+            <h3 className="text-white font-semibold mb-4">Tentang Kami</h3>
             <ul className="space-y-2">
-              <li><a href="#!" className="hover:text-white transition-colors">Rekayasa Perangkat Lunak (RPL)</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Teknik Komputer & Jaringan (TKJ)</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Multimedia</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Akuntansi</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Bisnis Daring & Pemasaran</a></li>
+              <li><a href="/" className="hover:text-white transition-colors">Beranda</a></li>
+              <li><a href="/profile-yayasan" className="hover:text-white transition-colors">Profil Yayasan</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Visi & Misi</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Struktur Pengurus</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Laporan Kegiatan</a></li>
             </ul>
           </div>
 
-          {/* Informasi */}
+          {/* Program & Kegiatan */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Informasi</h3>
+            <h3 className="text-white font-semibold mb-4">Program Unggulan</h3>
             <ul className="space-y-2">
-              <li><a href="#!" className="hover:text-white transition-colors">Berita Sekolah</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Agenda Kegiatan</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Prestasi Siswa</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">E-Learning</a></li>
-              <li><a href="#!" className="hover:text-white transition-colors">Perpustakaan Digital</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Program LBQ</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Kajian Rutin</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Pendidikan Al-Qur’an</a></li>
+              <li><a href="#!" className="hover:text-white transition-colors">Kegiatan Sosial</a></li>
+              <li><a href="/gallery-masjid" className="hover:text-white transition-colors">Galeri Kegiatan</a></li>
             </ul>
           </div>
 
@@ -70,16 +71,16 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Kontak</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                📍 Jl. Pendidikan No. 123, Kota Anda
+                📍 Jl. Jatibening Raya No. 123, Pondok Gede, Bekasi, Jawa Barat
               </li>
               <li>
-                📞 (021) 123-4567
+                📞 (021) 8888-7777
               </li>
               <li>
-                ✉️ info@smkfahd.sch.id
+                ✉️ info@masjidibnusina.or.id
               </li>
               <li>
-                ⏰ Senin - Jum'at: 07.00 - 16.00
+                ⏰ Senin - Jumat: 08.00 - 16.00 WIB
               </li>
             </ul>
           </div>
@@ -88,7 +89,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-white/10 pt-6 text-center text-sm">
           <p>
-            &copy; {currentYear} SMK Fahd Islamic School. All rights reserved.
+            &copy; {currentYear} Yayasan Masjid Ibnusina Jatibening. All rights reserved.
           </p>
         </div>
       </div>

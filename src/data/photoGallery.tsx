@@ -6,19 +6,19 @@ export const steps = [
     {
       number: "01",
       icon: <Download className="h-6 w-6" />,
-      title: "Create Your Account",
-      description: "Sign up in minutes with our streamlined onboarding process. No complicated forms or lengthy verification."
+      title: "Daftar Sebagai Jamaah",
+      description: "Mudah mendaftar sebagai anggota jamaah atau peserta program pendidikan kami tanpa biaya pendaftaran."
     },
     {
       number: "02",
       icon: <Wallet className="h-6 w-6" />,
-      title: "Fund Your Wallet",
-      description: "Easily deposit crypto or fiat through multiple payment options with zero deposit fees."
+      title: "Ikuti Kegiatan",
+      description: "Ikuti kegiatan ibadah, pendidikan, dan sosial dengan berbagai pilihan program yang kami tawarkan."
     },
     {
       number: "03",
       icon: <BarChart4 className="h-6 w-6" />,
-      title: "Start Trading",
-      description: "Access 50+ cryptocurrencies and start trading immediately with intuitive tools and real-time data."
+      title: "Berkembang Bersama",
+      description: "Berkembang secara spiritual, ilmu pengetahuan, dan keterampilan melalui berbagai program unggulan kami."
     }
   ];

@@ -13,66 +13,51 @@ import {
 const Features = () => {
   const features = [
     {
-      icon: <Award className="w-6 h-6" />,
-      title: "Akreditasi A",
-      description: "Terakreditasi A oleh BAN-S/M dengan standar pendidikan nasional yang terjamin kualitasnya."
+      icon: <Shield className="w-6 h-6" />,
+      title: "Berlandaskan Al-Qur’an & Sunnah",
+      description: "Seluruh aktivitas yayasan dijiwai oleh nilai-nilai Islam yang shahih dan moderat."
     },
     {
       icon: <Heart className="w-6 h-6" />,
-      title: "Pendidikan Islami",
-      description: "Memadukan kurikulum vokasional dengan nilai-nilai Islam untuk membentuk karakter unggul."
-    },
-    {
-      icon: <Laptop className="w-6 h-6" />,
-      title: "Fasilitas Modern",
-      description: "Laboratorium komputer, workshop, dan fasilitas pembelajaran berstandar industri."
+      title: "Pusat Dakwah & Pendidikan",
+      description: "Masjid sebagai pusat peradaban: tempat ibadah, belajar, dan pemberdayaan umat."
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Guru Berpengalaman",
-      description: "Tenaga pengajar profesional dan bersertifikat dengan pengalaman industri yang mumpuni."
-    },
-    {
-      icon: <Building className="w-6 h-6" />,
-      title: "Kerjasama Industri",
-      description: "Partnerships dengan perusahaan terkemuka untuk magang dan penyerapan lulusan."
-    },
-    {
-      icon: <Target className="w-6 h-6" />,
-      title: "Kurikulum Tepat Sasaran",
-      description: "Kurikulum yang disesuaikan dengan kebutuhan dunia kerja dan perkembangan teknologi."
-    },
-    {
-      icon: <GraduationCap className="w-6 h-6" />,
-      title: "Alumni Sukses",
-      description: "Track record alumni yang sukses berkarir di berbagai perusahaan dan wirausaha mandiri."
+      title: "Pengurus Amanah & Profesional",
+      description: "Dikelola oleh tim yang kompeten, berintegritas, dan memiliki komitmen tinggi terhadap dakwah."
     },
     {
       icon: <BookOpen className="w-6 h-6" />,
-      title: "Program Keahlian Lengkap",
-      description: "5 program keahlian: RPL, TKJ, Multimedia, Akuntansi, dan Pemasaran Online."
+      title: "Program LBQ",
+      description: "Bimbingan baca dan hafal Al-Qur’an dengan metode terstruktur melalui program LBQ untuk santri dan masyarakat sekitar."
     },
     {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Lingkungan Islami",
-      description: "Suasana belajar yang kondusif dengan nuansa Islami dan pembinaan akhlak mulia."
+      icon: <GraduationCap className="w-6 h-6" />,
+      title: "Pendidikan Karakter Islami",
+      description: "Membentuk generasi berakhlak mulia, cinta masjid, dan peduli terhadap sesama."
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: "Transparansi & Akuntabilitas",
+      description: "Laporan keuangan dan kegiatan yayasan terbuka untuk jamaah dan donatur."
     }
   ];
 
   return (
-    <section id="features" className="py-16 md:py-20 bg-gradient-to-br from-[#FAF3E0] to-[#F5E6D3]">
+    <section id="features" className="py-16 md:py-20 bg-gradient-to-br from-emerald-50 to-white">
       <div className="container max-w-7xl mx-auto px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <span className="text-[#D4A373] font-medium text-sm md:text-base uppercase tracking-wide mb-2 block">
-            WHY CHOOSE US
+          <span className="text-emerald-600 font-medium text-sm md:text-base uppercase tracking-wide mb-2 block">
+            NILAI UTAMA KAMI
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#3C2A21]">
-            Keunggulan SMK Fahd Islamic School
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
+            Keunggulan Yayasan Masjid Ibnusina Jatibening
           </h2>
-          <p className="text-[#5C4033] max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
-            Kami menghadirkan pendidikan vokasional terbaik yang memadukan keunggulan akademik, 
-            keterampilan industri, dan pembentukan karakter Islami untuk masa depan yang gemilang.
+          <p className="text-gray-700 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+            Kami hadir sebagai perpanjangan tangan masjid dalam membina, memberdayakan, 
+            dan menebarkan manfaat bagi umat dengan semangat ukhuwah dan amal jariyah.
           </p>
         </div>
 
@@ -83,24 +68,24 @@ const Features = () => {
               key={index}
               className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl 
                          transition-all duration-500 p-6 md:p-8 text-center border border-white/50
-                         hover:border-[#D4A373]/30 hover:-translate-y-2 min-h-[260px] flex flex-col justify-center"
+                         hover:border-emerald-300 hover:-translate-y-2 min-h-[260px] flex flex-col justify-center"
             >
               {/* Icon dengan animasi */}
-              <div className="bg-gradient-to-br from-[#D4A373] to-[#B8956A] rounded-2xl w-16 h-16 
+              <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-2xl w-16 h-16 
                               flex items-center justify-center mb-6 mx-auto text-white shadow-lg
                               group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                 {feature.icon}
               </div>
               
               {/* Title */}
-              <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#3C2A21] 
-                             group-hover:text-[#D4A373] transition-colors duration-300">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-900 
+                             group-hover:text-emerald-600 transition-colors duration-300">
                 {feature.title}
               </h3>
               
               {/* Description */}
-              <p className="text-[#5C4033] text-sm md:text-base leading-relaxed 
-                            group-hover:text-[#4A3429] transition-colors duration-300">
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed 
+                            group-hover:text-gray-800 transition-colors duration-300">
                 {feature.description}
               </p>
             </div>
@@ -110,17 +95,17 @@ const Features = () => {
         {/* Call to Action */}
         <div className="text-center mt-12 md:mt-16">
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-white/50">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#3C2A21] mb-4">
-              Siap Bergabung Bersama Kami?
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Mari Berkontribusi untuk Umat!
             </h3>
-            <p className="text-[#5C4033] mb-6 text-base md:text-lg">
-              Jadilah bagian dari keluarga besar SMK Fahd Islamic School dan raih masa depan gemilang!
+            <p className="text-gray-700 mb-6 text-base md:text-lg">
+              Dukung program dakwah, pendidikan, dan pemberdayaan masjid Ibnusina Jatibening.
             </p>
-            <button className="bg-gradient-to-r from-[#D4A373] to-[#B8956A] text-white 
+            <button className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white 
                                px-8 py-3 md:px-10 md:py-4 rounded-full font-semibold 
-                               hover:from-[#B8956A] hover:to-[#A0845C] transform hover:scale-105 
+                               hover:from-emerald-700 hover:to-emerald-800 transform hover:scale-105 
                                transition-all duration-300 shadow-lg hover:shadow-xl">
-              Daftar Sekarang
+              Donasi
             </button>
           </div>
         </div>
