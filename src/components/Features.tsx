@@ -3,10 +3,7 @@ import {
   BookOpen, 
   Users, 
   Award, 
-  Laptop, 
   Heart,
-  Building,
-  Target,
   Shield
 } from "lucide-react";
 
@@ -45,17 +42,17 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-16 md:py-20 bg-gradient-to-br from-emerald-50 to-white">
-      <div className="container max-w-7xl mx-auto px-6 md:px-8">
+    <section id="features" className="py-16 md:py-20 bg-white relative overflow-hidden">
+      <div className="container max-w-7xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <span className="text-emerald-600 font-medium text-sm md:text-base uppercase tracking-wide mb-2 block">
+          <span className="text-emerald-800 font-medium text-sm md:text-base uppercase tracking-wide mb-2 block">
             NILAI UTAMA KAMI
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900">
-            Keunggulan Yayasan Masjid Ibnusina Jatibening
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-yellow-600">
+            Keunggulan Yayasan Masjid Darussalam
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+          <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
             Kami hadir sebagai perpanjangan tangan masjid dalam membina, memberdayakan, 
             dan menebarkan manfaat bagi umat dengan semangat ukhuwah dan amal jariyah.
           </p>
@@ -66,26 +63,21 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-white/80 backdrop-blur-sm rounded-2xl shadow-md hover:shadow-xl 
-                         transition-all duration-500 p-6 md:p-8 text-center border border-white/50
-                         hover:border-emerald-300 hover:-translate-y-2 min-h-[260px] flex flex-col justify-center"
+              className="group bg-gray-50 rounded-2xl border border-emerald-200 
+                         transition-all duration-500 p-6 md:p-8 text-center
+                         hover:border-emerald-300 hover:-translate-y-1 min-h-[260px] flex flex-col justify-center"
             >
-              {/* Icon dengan animasi */}
-              <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-2xl w-16 h-16 
-                              flex items-center justify-center mb-6 mx-auto text-white shadow-lg
-                              group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+              <div className="bg-white rounded-2xl w-16 h-16 
+                              flex items-center justify-center mb-6 mx-auto text-emerald-700
+                              group-hover:bg-emerald-50 group-hover:text-emerald-800 transition-all duration-300 shadow-sm">
                 {feature.icon}
               </div>
               
-              {/* Title */}
-              <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-900 
-                             group-hover:text-emerald-600 transition-colors duration-300">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-900 group-hover:text-emerald-800 transition-colors">
                 {feature.title}
               </h3>
               
-              {/* Description */}
-              <p className="text-gray-700 text-sm md:text-base leading-relaxed 
-                            group-hover:text-gray-800 transition-colors duration-300">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed group-hover:text-gray-700">
                 {feature.description}
               </p>
             </div>
@@ -94,17 +86,15 @@ const Features = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-12 md:mt-16">
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-white/50">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <div className="bg-gray-50 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-emerald-200">
+            <h3 className="text-2xl md:text-3xl font-bold text-yellow-600 mb-4">
               Mari Berkontribusi untuk Umat!
             </h3>
-            <p className="text-gray-700 mb-6 text-base md:text-lg">
-              Dukung program dakwah, pendidikan, dan pemberdayaan masjid Ibnusina Jatibening.
+            <p className="text-gray-600 mb-6 text-base md:text-lg">
+              Dukung program dakwah, pendidikan, dan pemberdayaan Masjid Darussalam.
             </p>
-            <button className="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white 
-                               px-8 py-3 md:px-10 md:py-4 rounded-full font-semibold 
-                               hover:from-emerald-700 hover:to-emerald-800 transform hover:scale-105 
-                               transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="bg-emerald-800 text-white px-8 py-3 md:px-10 md:py-4 rounded-full font-semibold 
+                               hover:bg-emerald-900 transform hover:scale-105 transition-all duration-300 shadow-md">
               Donasi
             </button>
           </div>

@@ -34,6 +34,36 @@
     --sidebar-border: 210 20% 90%;
     --sidebar-ring: 160 60% 40%; /* Islamic green */
   }
+
+  .dark {
+    --background: 220 10% 10%; /* Dark gray background */
+    --foreground: 220 15% 90%; /* Light text */
+    --card: 220 10% 12%; /* Dark card */
+    --card-foreground: 220 15% 90%;
+    --popover: 220 10% 8%;
+    --popover-foreground: 220 15% 90%;
+    --primary: 160 70% 50%; /* Lighter Islamic green */
+    --primary-foreground: 0 0% 10%; /* Dark text on primary */
+    --secondary: 45 50% 30%; /* Darker gold/amber */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 10% 20%; /* Dark blue-gray */
+    --muted-foreground: 215 15% 65%;
+    --accent: 30 50% 30%; /* Darker warm gold */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%; /* Darker red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 10% 20%; /* Dark blue-gray border */
+    --input: 210 10% 20%;
+    --ring: 160 70% 50%; /* Match primary green */
+    --sidebar-background: 220 10% 8%;
+    --sidebar-foreground: 220 15% 90%;
+    --sidebar-primary: 160 70% 50%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 45 50% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 10% 20%;
+    --sidebar-ring: 160 70% 50%;
+  }
 }
 
 @layer base {

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const images = ["bg-masjid.jpeg", "bg-masjid.jpeg", "bg-masjid.jpeg"];
+  const images = ["bg-img1.jpg", "bg-img2.jpg", "bg-img3.jpg"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto slide tiap 5 detik
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -14,7 +13,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Background Images dengan fade */}
+      {/* Background Images */}
       <div className="absolute inset-0 z-0">
         {images.map((img, index) => (
           <div
@@ -27,28 +26,24 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Overlay hijau transparan */}
-      <div className="absolute inset-0 z-10 bg-emerald-900/60" />
+      {/* Overlay hitam ala aa*/}
+      <div className="absolute inset-0 z-10 bg-[#0a0a0a]/60" />
 
       {/* Konten */}
       <div className="container mx-auto px-4 py-20 relative z-30">
         <div className="flex flex-col items-start text-left max-w-3xl">
-          {/* Salam */}
-          <p className="text-gray-200 text-sm md:text-base mb-4">
+          <p className="text-gray-300 text-sm md:text-base mb-4">
             Assalamualaikum warahmatullahi wabarakatuh
           </p>
 
-          {/* Headline */}
           <h1
             className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-snug text-white"
-            style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.4)" }}
+            style={{ textShadow: "1px 1px 3px rgba(0, 0, 0, 0.5)" }}
           >
-            Yayasan Masjid IBNUSINA Jatibening,<br /> Bekasi
+            Masjid Darussalam, Taman Persada Raya<br /> Bekasi
           </h1>
 
-
-          {/* Deskripsi */}
-          <p className="text-gray-200 text-sm md:text-lg max-w-2xl leading-relaxed drop-shadow-md">
+          <p className="text-gray-300 text-sm md:text-lg max-w-2xl leading-relaxed">
             Yayasan Masjid Ibnusina Jatibening berdiri sebagai pusat ibadah,
             dakwah, dan kegiatan sosial kemasyarakatan. Masjid ini diresmikan
             pada tahun 2023 dengan tujuan membina ukhuwah Islamiyah, memberikan
@@ -56,7 +51,6 @@ const Hero = () => {
             masyarakat sekitar.
           </p>
 
-          {/* Tombol */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6">
             <a
               href="#tentang"

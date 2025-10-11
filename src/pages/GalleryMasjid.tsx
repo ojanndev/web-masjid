@@ -4,6 +4,7 @@ import { Camera, Calendar, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { AnimatedBackground } from '@/components/ui/animated-background';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import BottomBar from '@/components/BottomBar';
 import useScrollAnimation from '@/utils/useScrollAnimation';
 
 const GalleryMasjid = () => {
@@ -99,7 +100,7 @@ const GalleryMasjid = () => {
   };
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden pb-24">
       <Navbar />
       
       {/* Hero Section - Tema Hijau */}
@@ -253,6 +254,7 @@ const GalleryMasjid = () => {
       )}
       
       <Footer />
+      <BottomBar />
     </div>
   );
 };

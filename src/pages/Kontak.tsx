@@ -1,3 +1,5 @@
+
+
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -14,6 +16,7 @@ import {
 import { AnimatedBackground } from '@/components/ui/animated-background';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import BottomBar from '@/components/BottomBar';
 import useScrollAnimation from '@/utils/useScrollAnimation';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -107,7 +110,7 @@ const Kontak = () => {
   ];
 
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden pb-24">
       <Navbar />
       
       {/* Hero Section */}
@@ -381,6 +384,7 @@ const Kontak = () => {
       </section>
       
       <Footer />
+      <BottomBar />
     </div>
   );
 };
