@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = memo(() => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activePath, setActivePath] = useState('');
@@ -53,7 +53,7 @@ const Navbar = () => {
               src="/logo-darussallam.png"
               alt="Logo Masjid Darussalam"
               className="h-10 sm:h-12 w-auto object-contain"
-              loading="lazy"
+              loading="eager"
             />
           </div>
         </div>
@@ -142,6 +142,6 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
+});
 
 export default Navbar;

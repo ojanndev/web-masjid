@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/web-masjid",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
@@ -32,18 +32,27 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     sourcemap: mode === 'development', // Only generate sourcemaps in development
+    cssCodeSplit: true,
     rollupOptions: {
       output: {
         manualChunks: {
-          // Split vendor chunks for better caching
+          // Split vendor chunks for better caching and performance
           'react-vendor': ['react', 'react-dom'],
+          'router-vendor': ['react-router-dom'],
           'react-query': ['@tanstack/react-query'],
           'ui-vendor': ['@radix-ui/react-slot', 'lucide-react'],
           'animation-vendor': ['framer-motion'],
           'forms-vendor': ['react-hook-form', '@hookform/resolvers', 'zod'],
           'date-vendor': ['react-day-picker', 'input-otp'],
+          'charts-vendor': ['recharts'],
         },
-        entryFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: (chunkInfo) => {
+          // Keep main bundle smaller by using descriptive names
+          if (chunkInfo.name === 'index') {
+            return 'assets/index-[hash].js';
+          }
+          return 'assets/[name]-[hash].js';
+        },
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: (assetInfo) => {
           if (assetInfo.name && assetInfo.name.endsWith('.css')) {
@@ -58,6 +67,15 @@ export default defineConfig(({ mode }) => ({
           return 'assets/[name]-[hash][extname]';
         },
       },
+    },
+    minify: 'terser', // Use terser for better minification
+    terserOptions: {
+      compress: {
+        drop_console: true, // Remove console.log in production
+        drop_debugger: true,
+        pure_funcs: ['console.log'], // Remove console calls
+      },
+      mangle: true,
     },
   },
   optimizeDeps: {

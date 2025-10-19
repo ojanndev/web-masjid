@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Youtube } from 'lucide-react';
+import { memo } from 'react';
 
-const Footer = () => {
+const Footer = memo(() => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -15,13 +16,14 @@ const Footer = () => {
                 src="/logo-darussallam.png"
                 alt="Logo Masjid Darussalam"
                 className="h-20 w-auto mr-3"
+                loading="eager"
               />
               <h2 className="text-2xl font-bold text-white">
-               
+              
               </h2>
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">
-              Pusat ibadah, pendidikan Al-Qur’an, dakwah, dan pemberdayaan umat di Taman Persada Raya, Bekasi.
+              Pusat ibadah, pendidikan Al-Qur'an, dakwah, dan pemberdayaan umat di Taman Persada Raya, Bekasi.
             </p>
             {/* Sosial Media */}
             <div className="flex space-x-4">
@@ -73,7 +75,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Program LBQ</a></li>
               <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Kajian Rutin</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Pendidikan Al-Qur’an</a></li>
+              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Pendidikan Al-Qur'an</a></li>
               <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Kegiatan Sosial</a></li>
               <li><a href="/gallery-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Galeri Kegiatan</a></li>
             </ul>
@@ -112,6 +114,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;
