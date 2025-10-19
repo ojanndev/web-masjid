@@ -8,7 +8,7 @@ import ProfileMasjid from "./pages/ProfileMasjid";
 import GalleryMasjid from "./pages/GalleryMasjid";
 import Kontak from "./pages/Kontak";
 import Berita from './pages/Berita';
-import PendaftaranRQD from './pages/PendaftaranRQD'; // ✅ Import halaman baru
+import PendaftaranRQD from './pages/PendaftaranRQD';
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,14 +18,14 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* ✅ Tambahkan basename sesuai nama repo GitHub Pages */}
+      <BrowserRouter basename="/web-masjid">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/profile-masjid" element={<ProfileMasjid />} />
           <Route path="/gallery-masjid" element={<GalleryMasjid />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/berita" element={<Berita />} />
-          {/* ✅ Tambahkan route berikut */}
           <Route path="/pendaftaran-rqd" element={<PendaftaranRQD />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
