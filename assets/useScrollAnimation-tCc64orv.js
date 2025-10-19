@@ -1,0 +1,1 @@
+import{r as e}from"./react-vendor-Dus4vK_x.js";const r=()=>{e.useEffect((()=>{const e=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&e.target.classList.add("show")}))}),{threshold:.1}),r=document.querySelectorAll(".animate-on-scroll");return r.forEach((r=>e.observe(r))),()=>{r.forEach((r=>e.unobserve(r)))}}),[])};export{r as u};
