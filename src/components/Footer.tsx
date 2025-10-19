@@ -12,12 +12,12 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/logo.png"
+                src="/logo-darussallam.png"
                 alt="Logo Masjid Darussalam"
-                className="h-12 w-auto mr-3"
+                className="h-20 w-auto mr-3"
               />
               <h2 className="text-2xl font-bold text-white">
-                Masjid Darussalam
+               
               </h2>
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">

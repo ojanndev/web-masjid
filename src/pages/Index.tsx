@@ -1,46 +1,40 @@
+"use client";
 
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import PhotoGallery from '@/components/About';
 import Features from '@/components/Features';
 import RentalSection from '@/components/RentalSection';
+import KajianSection from '@/components/KajianSection';
 import DonasiSection from '@/components/DonasiSection';
-// import Pricing from '@/components/Pricing';
+import LaporanKeuanganSection from '@/components/LaporanKeuanganSection';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
-// import FAQ from '@/components/FAQ';
-// import CTA from '@/components/CTA';
+
 import Footer from '@/components/Footer';
-import BottomBar from '@/components/BottomBar';
-// import ProfileSchool from '@/components/ProfileSchool';
+// import BottomBar from '@/components/BottomBar';
 import useScrollAnimation from '@/utils/useScrollAnimation';
 
 const Index = () => {
-  // Initialize scroll animations
   useScrollAnimation();
 
-  // Set page title
   useEffect(() => {
-    document.title = "yayasan Masjid IBNUSINA Jatibening";
+    document.title = "Masjid Darussalam Taman Persada Raya, Bekasi";
   }, []);
   
   return (
-    <div className="min-h-screen overflow-x-hidden pb-20">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
-      <PhotoGallery />
       <Features />
-      <RentalSection />
+      <LaporanKeuanganSection />
       <DonasiSection />
+      <RentalSection />
+      <KajianSection />
       <FloatingWhatsApp />
 
-      {/* <Pricing /> */}
-      {/* <FAQ /> */}
-      {/* <CTA /> */}
       <Footer />
-      <BottomBar />
-      {/* <ProfileSchool /> */}
+      {/* <BottomBar /> */}
     </div>
   );
 };

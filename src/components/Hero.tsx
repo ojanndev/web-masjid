@@ -26,7 +26,7 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Overlay hitam ala aa*/}
+      {/* Overlay hitam ala beingreels.com */}
       <div className="absolute inset-0 z-10 bg-[#0a0a0a]/60" />
 
       {/* Konten */}
@@ -44,7 +44,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-gray-300 text-sm md:text-lg max-w-2xl leading-relaxed">
-            Yayasan Masjid Ibnusina Jatibening berdiri sebagai pusat ibadah,
+            Yayasan Masjid Darussalam berdiri sebagai pusat ibadah,
             dakwah, dan kegiatan sosial kemasyarakatan. Masjid ini diresmikan
             pada tahun 2023 dengan tujuan membina ukhuwah Islamiyah, memberikan
             pendidikan agama, serta menjadi wadah berbagai kegiatan sosial
@@ -56,7 +56,7 @@ const Hero = () => {
               href="#tentang"
               className="flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
             >
-              Tentang Yayasan
+              Tentang Kami
             </a>
             <a
               href="#program"

@@ -50,7 +50,7 @@ const Features = () => {
             NILAI UTAMA KAMI
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-yellow-600">
-            Keunggulan Yayasan Masjid Darussalam
+            6 Pilar Masjid Darussalam TPR
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
             Kami hadir sebagai perpanjangan tangan masjid dalam membina, memberdayakan, 
@@ -83,22 +83,7 @@ const Features = () => {
             </div>
           ))}
         </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-12 md:mt-16">
-          <div className="bg-gray-50 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto border border-emerald-200">
-            <h3 className="text-2xl md:text-3xl font-bold text-yellow-600 mb-4">
-              Mari Berkontribusi untuk Umat!
-            </h3>
-            <p className="text-gray-600 mb-6 text-base md:text-lg">
-              Dukung program dakwah, pendidikan, dan pemberdayaan Masjid Darussalam.
-            </p>
-            <button className="bg-emerald-800 text-white px-8 py-3 md:px-10 md:py-4 rounded-full font-semibold 
-                               hover:bg-emerald-900 transform hover:scale-105 transition-all duration-300 shadow-md">
-              Donasi
-            </button>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
