@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Youtube } from 'lucide-react';
 import { memo } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = memo(() => {
   const currentYear = new Date().getFullYear();
@@ -61,11 +62,11 @@ const Footer = memo(() => {
           <div>
             <h3 className="text-white font-semibold mb-4">Tentang Kami</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-400 hover:text-emerald-400 transition-colors">Beranda</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Profil Yayasan</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Visi & Misi</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Struktur Pengurus</a></li>
-              <li><a href="/gallery-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Laporan Kegiatan</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-emerald-400 transition-colors">Beranda</Link></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Profil Yayasan</Link></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Visi & Misi</Link></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Struktur Pengurus</Link></li>
+              <li><Link to="/gallery-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Laporan Kegiatan</Link></li>
             </ul>
           </div>
 
@@ -73,11 +74,11 @@ const Footer = memo(() => {
           <div>
             <h3 className="text-white font-semibold mb-4">Program Unggulan</h3>
             <ul className="space-y-2">
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Program LBQ</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Kajian Rutin</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Pendidikan Al-Qur'an</a></li>
-              <li><a href="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Kegiatan Sosial</a></li>
-              <li><a href="/gallery-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Galeri Kegiatan</a></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Program LBQ</Link></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Kajian Rutin</Link></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Pendidikan Al-Qur'an</Link></li>
+              <li><Link to="/profile-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Kegiatan Sosial</Link></li>
+              <li><Link to="/gallery-masjid" className="text-gray-400 hover:text-emerald-400 transition-colors">Galeri Kegiatan</Link></li>
             </ul>
           </div>
 

@@ -1,13 +1,16 @@
 import { useState, useEffect, memo } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = memo(() => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activePath, setActivePath] = useState('');
 
+  const location = useLocation();
+  
   useEffect(() => {
-    setActivePath(window.location.pathname);
+    setActivePath(location.pathname);
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -15,7 +18,7 @@ const Navbar = memo(() => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -64,8 +67,8 @@ const Navbar = memo(() => {
             const isActive = activePath === item.href;
             return (
               <li key={index}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className={`transition-all duration-500 relative group text-sm lg:text-base font-medium ${
                     isScrolled
                       ? isActive
@@ -83,7 +86,7 @@ const Navbar = memo(() => {
                       isScrolled ? 'bg-gray-900' : 'bg-white'
                     } ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}
                   ></span>
-                </a>
+                </Link>
               </li>
             );
           })}
@@ -117,8 +120,8 @@ const Navbar = memo(() => {
                 const isActive = activePath === item.href;
                 return (
                   <li key={index}>
-                    <a
-                      href={item.href}
+                    <Link
+                      to={item.href}
                       className={`block py-3 pl-4 border-l-2 text-base transition-colors ${
                         isScrolled
                           ? isActive
@@ -132,7 +135,7 @@ const Navbar = memo(() => {
                       aria-current={isActive ? 'page' : undefined}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

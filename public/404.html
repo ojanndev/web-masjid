@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://ojanndev.github.io/web-masjid/" />
     <meta property="og:title" content="Masjid Darussalam TPR Jatibening - Tempat Ibadah & Pendidikan Islam" />
     <meta property="og:description" content="Masjid Darussalam TPR Jatibening menyediakan tempat ibadah, pendidikan Al-Qur'an, serta program pendidikan Islam untuk masyarakat." />
-    <meta property="og:image" content="logo-masjid.svg" />
+    <meta property="og:image" content="/web-masjid/logo-masjid.svg" />
     <meta property="og:image:alt" content="Logo Masjid Darussalam TPR Jatibening" />
 
     <!-- Twitter -->
@@ -23,19 +23,40 @@
     <meta name="twitter:url" content="https://ojanndev.github.io/web-masjid/" />
     <meta name="twitter:title" content="Masjid Darussalam TPR Jatibening - Tempat Ibadah & Pendidikan Islam" />
     <meta name="twitter:description" content="Masjid Darussalam TPR Jatibening menyediakan tempat ibadah, pendidikan Al-Qur'an, serta program pendidikan Islam untuk masyarakat." />
-    <meta name="twitter:image" content="logo-darussallam.png" />
+    <meta name="twitter:image" content="/web-masjid/logo-darussallam.png" />
     <meta name="twitter:image:alt" content="Logo Masjid Darussalam TPR Jatibening" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/logo-masjid.svg" />
-    <link rel="apple-touch-icon" href="/logo-darussallam.png" />
+    <link rel="icon" type="image/svg+xml" href="/web-masjid/logo-masjid.svg" />
+    <link rel="apple-touch-icon" href="/web-masjid/logo-darussallam.png" />
 
     <!-- Font preloads -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     
-
+    <!-- GitHub Pages SPA Redirect Script -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafrex/spa-github-pages
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q.replace(/~and~/g, '&')) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
 
     <!-- Accessibility -->
     <meta name="theme-color" content="#2D5016" />
@@ -43,8 +64,6 @@
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <!-- <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script> -->
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- The script path will be automatically updated during build -->
   </body>
 </html>
